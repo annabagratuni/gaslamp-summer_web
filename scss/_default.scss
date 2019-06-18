@@ -1,0 +1,85 @@
+@import "_colors";
+
+h1,
+h2,
+h3 {
+  font-family: 'Post No Bills Colombo';
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.222;
+}
+
+h1 {
+  font-size: 66px;
+  text-transform: uppercase;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.unlisted {
+  list-style-type: none;
+}
+
+.section-title {
+  margin-bottom: 60px;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+a,
+.btn,
+.ticket {
+  transition: all 0.2s ease-in-out;
+}
+
+.btn {
+  font-family: 'Montserrat'!important;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.42857143;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 13px 30px;
+  border-radius: 10rem;
+  user-select: none;
+  transition: all 0.2s ease-in-out;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.btn-border {
+  color: $white;
+  background-color: transparent;
+  border: 1px solid $white;
+
+  &:hover,
+  &:focus {
+    background-color: #fff;
+    color: $dark-blue;
+  }
+}
+
+.bg-d {
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.bg-union-1 {
+  background-image: url("../img/union-1.png");
+}
