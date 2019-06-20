@@ -1,4 +1,20 @@
 
+@media (max-width: 767px) {
+	.col-6 {
+		float: left;
+		width: 50%;
+	}
+
+	.header {
+		background-size: cover;
+	}
+
+	.partners {
+		.partners-logo {
+			margin-bottom: 30px;
+		}
+	}
+}
 
 @media (max-width:500px) {
 	h1 {
@@ -11,6 +27,7 @@
 
 	.header {
 		padding: 60px 0 100px;
+		//background-size: cover;
 
 		.header-content {
 			h1 {
@@ -48,13 +65,6 @@
 		}
 	}
 
-	.partners {
-		.partners-logo {
-			height: 120px;
-			padding: 0 80px;
-		}
-	}
-
 	.location {
 		.loc-col,
 		.loc-logo {
@@ -71,6 +81,12 @@
 			p {
 				font-size: 20px;
 			}
+		}
+	}
+
+	.partners {
+		.partners-logo {
+			width: 120px;
 		}
 	}
 

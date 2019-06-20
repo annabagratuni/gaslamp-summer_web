@@ -12,16 +12,18 @@ $(document).ready(function(){
 		androidFix: true
 	});
 
-	$('.parallax-header').parallax({
+/*	$('.parallax-header').parallax({
 		imageSrc: 'img/header-bg.jpg',
-		naturalWidth: 1880,
-		naturalHeight: 1248,
+		//naturalWidth: 1880,
+		//naturalHeight: 1248,
 		speed: 0.1,
 		ZIndex: -100,
 		//bleed: 0.5,
+		positionX: 'top',
+		positionY: 'top',
 		iosFix: true,
 		androidFix: true
-	});
+	});*/
 
 	$(".owl-carousel").owlCarousel({
 		items: 2,
@@ -48,5 +50,17 @@ $(document).ready(function(){
 	$('select').selectric({
 		maxHeight: 200
 	});
+
+	$('a[href*="#"]').on('click', function(e) {
+		e.preventDefault()
+
+		$('html, body').animate(
+			{
+				scrollTop: $($(this).attr('href')).offset().top,
+			},
+			600,
+			'linear'
+		)
+	})
 
 });
